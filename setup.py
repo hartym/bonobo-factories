@@ -53,10 +53,8 @@ setup(
     include_package_data=True,
     install_requires=['bonobo (>= 0.5.1)'],
     extras_require={
-        'dev': [
-            'bonobo (>= 0.5.1)', 'coverage (>= 4.4, < 5.0)',
-            'pytest (>= 3.1, < 4.0)', 'pytest-cov (>= 2.5, < 3.0)'
-        ]
+        'dev':
+        ['bonobo (>= 0.5.1)', 'coverage (>= 4.4, < 5.0)', 'pytest (>= 3.1, < 4.0)', 'pytest-cov (>= 2.5, < 3.0)']
     },
     url='',
     download_url=''.format(version=version),

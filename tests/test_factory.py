@@ -25,7 +25,6 @@ class FactoryTypeTest(TestCase):
         assert self.execute_node(f, {'foo': 'bar'}, {'foo': 'baz'}) == [{'foo': 'BAR'}, {'foo': 'BAZ'}]
 
 
-
 """
 draft below.
 
