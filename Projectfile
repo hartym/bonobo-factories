@@ -1,0 +1,26 @@
+# bonobo-factories (see github.com/hartym/bonobo-factories)
+
+from medikit import require
+
+pytest = require('pytest')
+python = require('python')
+yapf = require('yapf')
+
+python.setup(
+    name='bonobo_factories',
+    description='Bonobo Factories',
+    license='Apache License, Version 2.0',
+    url='',
+    download_url='',
+    author='Romain Dorgueil',
+    author_email='romain@dorgueil.net',
+)
+
+bonobo_version = '>= 0.5.1'
+
+python.add_requirements(
+    'bonobo ' + bonobo_version,
+    dev=['bonobo[dev] ' + bonobo_version],
+)
+
+# vim: ft=python:
